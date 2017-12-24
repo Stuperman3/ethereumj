@@ -43,7 +43,7 @@ import java.math.BigInteger;
  * Current implementation uses Jacobian coordinate system as
  * <a href="https://github.com/scipr-lab/libff/blob/master/libff/algebra/curves/alt_bn128/alt_bn128_g1.cpp">libff</a> does,
  * use {@link #toEthNotation()} to convert Jacobian coords to Ethereum encoding <br/>
- *
+ * test
  * @author Mikhail Kalinin
  * @since 05.09.2017
  */
