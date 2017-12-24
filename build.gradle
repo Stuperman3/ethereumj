@@ -26,9 +26,10 @@ subprojects {
 
     group = 'org.ethereum'
 
-    version = config.versionNumber + ("master" == gitCurBranch() ? "-RELEASE" : "-SNAPSHOT")
+    //version = config.versionNumber + ("master" == gitCurBranch() ? "-RELEASE" : "-SNAPSHOT")
+    version = config.versionNumber + "-SNAPSHOT"
 
-    println("Building version: " + version + " (from branch " + gitCurBranch() + ")")
+    //println("Building version: " + version + " (from branch " + gitCurBranch() + ")")
 
     compileJava.options.encoding = 'UTF-8'
     compileJava.options.compilerArgs << '-XDignore.symbol.file'

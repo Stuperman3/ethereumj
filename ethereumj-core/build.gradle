@@ -251,7 +251,8 @@ tasks.processResources.doLast(){
     println 'This will be printed after the build task even if something else calls the build task'
 
     File versionfile = file(new File('build/resources/main/build-info.properties'))
-    versionfile.text = 'build.hash=' + gitCommitHash() + '\n' + 'build.time=' + buildTime() + '\n' + 'build.branch=' + gitCurBranch() + '\n'
+    //versionfile.text = 'build.hash=' + gitCommitHash() + '\n' + 'build.time=' + buildTime() + '\n' + 'build.branch=' + gitCurBranch() + '\n'
+    versionfile.text = 'build.hash=' + gitCommitHash() + '\n' + 'build.time=' + buildTime() + '\n' + 'build.branch=YOFATASSMOMMA' + '\n'
 }
 
 task publish {
